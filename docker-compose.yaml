@@ -1,0 +1,20 @@
+services:
+  know-your-fan-furia:
+    build: .
+    container_name: know-your-fan-furia
+
+    ports:
+      - "8501:8501"
+
+    environment:
+      - FIREBASE_DATABASE_URL=${FIREBASE_DATABASE_URL}
+      - FIREBASE_SERVICE_ACCOUNT_PATH=/app/firebase-service-account.json
+
+    volumes:
+      - ./firebase-service-account.json:/app/firebase-service-account.json:ro
+
+    restart: unless-stopped
+
+networks:
+  default:
+    driver: bridge

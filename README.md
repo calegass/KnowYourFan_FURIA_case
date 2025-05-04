@@ -73,8 +73,8 @@ Existem duas maneiras principais de executar a aplicação: localmente ou via Do
 **1. Clonar o Repositório:**
 
 ```bash
-git clone [URL do seu repositório Git]
-cd [nome-da-pasta-do-projeto]
+git clone https://github.com/calegass/KnowYourFan_FURIA_case.git
+cd KnowYourFan_FURIA_case
 ```
 
 **2. Configurar Variáveis de Ambiente:**
